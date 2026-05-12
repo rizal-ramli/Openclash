@@ -1,9 +1,9 @@
 # === Config untuk tes kecepatan ===
 # Format Penulisan
-## "Speedtest:
-##    type: file
-##    behavior: classical
- ##   path: "./rule_provider/speedtest.yaml"
+## Speedtest:
+##   type: file
+##   behavior: classical
+##   path: "./rule_provider/speedtest.yaml"
 
 payload:
   # === Speedtest utama ===
