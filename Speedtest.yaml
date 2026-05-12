@@ -1,0 +1,46 @@
+# === Config untuk tes kecepatan ===
+# Format Penulisan
+## "Speedtest:
+##    type: file
+##    behavior: classical
+ ##   path: "./rule_provider/speedtest.yaml"
+
+payload:
+  # === Speedtest utama ===
+  - DOMAIN-SUFFIX,speedtest.net
+  - DOMAIN-SUFFIX,speedtestcustom.com
+  - DOMAIN-SUFFIX,speedtest.co
+  - DOMAIN-SUFFIX,ookla.com
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN-SUFFIX,pingtest.net
+  - DOMAIN-SUFFIX,openspeedtest.com
+
+  # === Alternatif speedtest ===
+  - DOMAIN-SUFFIX,fast.com
+  - DOMAIN-SUFFIX,myrepublic.co.id
+  - DOMAIN-SUFFIX,speed.cloudflare.com
+  - DOMAIN-SUFFIX,speed.dler.io
+  - DOMAIN-SUFFIX,webtest.net
+  - DOMAIN-SUFFIX,cbn.id
+
+  # === CDN / backend pendukung ===
+  - DOMAIN-SUFFIX,cachefly.net
+  - DOMAIN-SUFFIX,cdnst.net
+  - DOMAIN-SUFFIX,cellmaps.com
+
+  # === Tools / API tambahan ===
+  - DOMAIN-SUFFIX,ip-api.com
+  - DOMAIN-SUFFIX,ipaddress.my
+  - DOMAIN-SUFFIX,panel.indo-ssh.com
+
+  # === Vendor / enterprise (opsional) ===
+  - DOMAIN-SUFFIX,ekahau.cloud
+  - DOMAIN-SUFFIX,ekahau.com
+
+  # === Keyword match (lebih luas) ===
+  - DOMAIN-KEYWORD,speedtest
+  - DOMAIN-KEYWORD,speedtestcustom
+  - DOMAIN-KEYWORD,openspeedtest
+
+  # === Port khusus ===
+  - DST-PORT,8080
